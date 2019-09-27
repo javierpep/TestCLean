@@ -1,0 +1,2 @@
+include ':app', ':stepper', ':compass', ':shake', ':domain', ':core', ':data'
+rootProject.name='TestClean'

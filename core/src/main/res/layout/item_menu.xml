@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_all_borders_gray_rounded_"
+    android:layout_margin="@dimen/menu_margin">
+
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/menu_icon"
+        android:layout_width="@dimen/menu_icon_size"
+        android:layout_height="@dimen/menu_icon_size"
+        app:lottie_loop="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="@dimen/menu_margin"
+        android:layout_marginTop="@dimen/menu_margin"
+        android:layout_marginBottom="@dimen/menu_margin"/>
+
+    <TextView android:id="@+id/menu_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Text menu"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="@dimen/menu_margin"
+        android:layout_marginRight="@dimen/menu_margin"
+        android:layout_marginTop="@dimen/menu_margin"
+        android:layout_marginBottom="@dimen/menu_margin"
+        app:layout_constraintStart_toEndOf="@+id/menu_icon"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
